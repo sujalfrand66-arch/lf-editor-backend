@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 
-const corsOptions = require('./config/corsOptions');
+
 const uploadRoutes = require('./routes/uploadRoutes');
 const errorHandler = require('./middleware/errorHandler');
 
@@ -19,3 +19,4 @@ app.use('/api', uploadRoutes);
 app.use(errorHandler);
 
 module.exports = app;
+
